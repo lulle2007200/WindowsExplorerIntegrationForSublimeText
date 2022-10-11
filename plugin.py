@@ -1,6 +1,7 @@
 import sys
 import logging
 import sublime
+import sublime_plugin
 
 package_name = 'Windows 11 Explorer Integration'
 
