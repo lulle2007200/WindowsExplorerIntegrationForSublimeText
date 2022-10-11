@@ -18,6 +18,7 @@ def uninstall_event():
 
 
 def plugin_loaded():
+	print("hello")
 	from package_control import events
 
 	if events.install(package_name):
