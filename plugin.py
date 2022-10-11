@@ -1,5 +1,6 @@
 import sublime
 import sublime_plugin
+import os
 from package_control import events
 
 package_name = 'Sublime Explorer Integration'
