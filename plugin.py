@@ -18,6 +18,7 @@ def uninstall_event():
 
 
 def plugin_loaded():
+	print(os.path.abspath(os.path.dirname(__file__)))
 	if events.install(package_name):
 		install_event()
 	elif events.post_upgrade(package_name):
