@@ -1,0 +1,15 @@
+{
+	"schema_version": "3.0.0",
+	"packages": [
+		{
+			"name": "Sublime Explorer Integration",
+			"details": "https://github.com/lulle2007200/WindowsExplorerIntegrationForSublimeText",
+			"releases": [
+				{
+					"sublime_text": "*",
+					"tags": true
+				}
+			]			
+		}
+	]
+}
