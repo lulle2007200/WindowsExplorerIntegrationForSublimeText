@@ -1,9 +1,8 @@
-import sys
-import logging
 import sublime
-import sublimeplugin
+import sublime_plugin
+from package_control import events
 
-package_name = 'Windows 11 Explorer Integration'
+package_name = 'Sublime Explorer Integration'
 
 def install_event():
 	print("install event")
@@ -19,16 +18,12 @@ def uninstall_event():
 
 
 def plugin_loaded():
-	from package_control import events
-
 	if events.install(package_name):
 		install_event()
 	elif events.post_upgrade(package_name):
 		upgrade_event()
 
 def plugin_unloaded():
-	from package_control import events
-
 	if events.pre_upgrade(package_name):
 		pre_upgrade_event()
 	elif events.remove(package_name):
